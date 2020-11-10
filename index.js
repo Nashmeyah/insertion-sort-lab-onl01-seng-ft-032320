@@ -7,8 +7,9 @@ for(let i = 0; i< array.length; i++){
     minIndex = i
   }
   array.splice(minIndex, 1)
-  return min
+  
 }
+return min
 }
 
 function selectionSort(array){
