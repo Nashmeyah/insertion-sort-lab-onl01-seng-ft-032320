@@ -6,12 +6,18 @@ for(let i = 0; i< array.length; i++){
     min = array[i]
     minIndex = i
   }
-  array.splice(minIndex, 1)
-
+  
 }
-return min
+  array.splice(minIndex, 1)
+  return min
 }
 
 function selectionSort(array){
-
+  let newMin
+  let sorted = []
+  while(array.length !=0){
+    newMin = findMinAndRemove(array);
+    sorted.push(newMin)
+  }
+  return sorted
 }
