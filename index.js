@@ -6,7 +6,7 @@ for(let i = 0; i< array.length; i++){
     min = array[i]
     minIndex = i
   }
-  
+
 }
   array.splice(minIndex, 1)
   return min
